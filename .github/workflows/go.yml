@@ -3,7 +3,7 @@ name: Go Build and Test
 on:
   push:
     branches:
-      - main  # Change this to your main branch name
+      - main
 
 jobs:
   test:
@@ -18,12 +18,10 @@ jobs:
         with:
           go-version: '1.21.4'  # Change this to your desired Go version
 
-      - name: Initialize Go Module
-        run: go mod init <module-name>  # Replace <module-name> with the actual name of your module
-
       - name: Test
         run: |
           echo "Testing started"
+          cd power-interruption-logging-system
           go test -v
 
   compile:
