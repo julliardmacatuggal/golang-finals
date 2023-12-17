@@ -21,7 +21,6 @@ jobs:
       - name: Test
         run: |
           echo "Testing started"
-          cd power-interruption-logging-system
           go test -v
 
   compile:
