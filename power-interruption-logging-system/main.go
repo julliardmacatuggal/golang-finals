@@ -33,6 +33,7 @@ func (i interruption) is_scheduled(list []interruption) bool {
 
 // function to check if interruption is scheduled using the date
 func is_scheduled_date(list []string, date string) bool {
+	// Solution for one date format
 	return slices.Contains(list, date)
 }
 
